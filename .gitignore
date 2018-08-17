@@ -5,5 +5,8 @@ private.key
 # modules
 /node_modules
 
+#ssl
+/ssl
+
 #lock
 package-lock.json
