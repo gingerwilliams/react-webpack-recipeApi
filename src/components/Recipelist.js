@@ -1,5 +1,4 @@
 import React from "react";
-import Form from "./Form";
 
 class Recipelist extends React.Component{
     render(){
@@ -22,7 +21,6 @@ class Recipelist extends React.Component{
                     }) 
                 }
                 
-            
             </div>
         );
     }

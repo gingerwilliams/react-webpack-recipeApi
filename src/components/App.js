@@ -2,7 +2,6 @@ import React from "react";
 import Form from "./Form";
 import Recipelist from "./Recipelist";
 
-import axios from "axios";
 import API_KEY_F2F  from '../../config_keys.js';
 
 
@@ -10,7 +9,6 @@ class App extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            
             recipes: []
         };
     }
@@ -27,9 +25,7 @@ class App extends React.Component {
         const recipeName = e.target.elements.recipeName.value;
         const api_call = await fetch(`https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=${API_KEY_F2F}&q=${recipeName}&count=10`)
         const data = await api_call.json();
-        
-        //console.log("got the food")
-
+    
         this.setState({ 
             recipes: data.recipes
         });
@@ -44,8 +40,8 @@ class App extends React.Component {
                 {/* on the main compenent you must pass the state to the compoenent with this.state */}
                 <Recipelist recipes={this.state.recipes} />
 
-                {
-                /* <Form getFunc={this.getFunc} getFood={this.getFood} />
+                {/* 
+                <Form getFunc={this.getFunc} getFood={this.getFood} />
                 { this.state.recipes.map(recipe => {
                     return (
                         <div key={recipe.recipe_id}>
@@ -55,13 +51,10 @@ class App extends React.Component {
                         </div>
                         )
                     }) 
-                }  */}
+                }
+                */}
             </div>
-
-            
-            
         )
-        
     }
 }
 
