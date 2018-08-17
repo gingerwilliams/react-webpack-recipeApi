@@ -5,7 +5,5 @@ private.key
 # modules
 /node_modules
 
-
-
 #lock
 package-lock.json

@@ -14,11 +14,9 @@ class Recipelist extends React.Component{
                                 <h5>{recipe.title}</h5>
                                 <p>by: <span>{recipe.publisher}</span></p>
 
-                                <button>open recipe</button>
+                                <a href={recipe.source_url} target="_blank">open recipe</a>
 
                             </div>
-                            
-
                         </div>
                         )
                     }) 

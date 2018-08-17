@@ -10,18 +10,13 @@ class App extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            // coins: []
+            
             recipes: []
         };
-
-        // this.getCoins = this.getCoins.bind();
-
     }
 
     // create an arrow funciton so you dont have to bind it
     getFunc = (e) => {
-        // const endpoint = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=';
-        
         e.preventDefault()
         console.log("got this function")
     }
