@@ -1,0 +1,9 @@
+# api keys
+config_keys.js 
+private.key
+
+# modules
+/node_modules
+
+#lock
+package-lock.json

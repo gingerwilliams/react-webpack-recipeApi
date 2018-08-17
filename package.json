@@ -1,0 +1,38 @@
+{
+  "name": "react-webpack-powerbi-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --mode development --hot --config ./webpack.config.js",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "PowerBi",
+    "Webpack",
+    "React"
+  ],
+  "author": "Ginja the Ninja",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "prop-types": "^15.6.2"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-env": "^2.4.1",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "cors": "^2.8.4",
+    "file-system": "^2.2.2",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
